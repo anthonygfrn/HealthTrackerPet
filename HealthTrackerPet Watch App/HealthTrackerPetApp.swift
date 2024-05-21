@@ -8,10 +8,20 @@
 import SwiftUI
 
 @main
-struct HealthTrackerPet_Watch_AppApp: App {
+struct HealthTrackerPetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house.fill")
+                    }
+                SummaryView()
+                    .tabItem {
+                        Label("Summary", systemImage: "list.star")
+                    }
+            }
+            .environmentObject(HealthManager()) 
         }
     }
 }

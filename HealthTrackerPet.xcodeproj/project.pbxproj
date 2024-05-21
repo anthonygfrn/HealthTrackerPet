@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A216346C2BFAD830000D9433 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216346B2BFAD830000D9433 /* HomeView.swift */; };
+		A216346E2BFAD850000D9433 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216346D2BFAD850000D9433 /* SummaryView.swift */; };
+		A21634722BFAD899000D9433 /* ActivitySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634712BFAD899000D9433 /* ActivitySummaryView.swift */; };
 		A24ACC182BFABC7D0062B701 /* HealthTrackerPet Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A24ACC172BFABC7D0062B701 /* HealthTrackerPet Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A24ACC1D2BFABC7D0062B701 /* HealthTrackerPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC1C2BFABC7D0062B701 /* HealthTrackerPetApp.swift */; };
 		A24ACC1F2BFABC7D0062B701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC1E2BFABC7D0062B701 /* ContentView.swift */; };
@@ -15,6 +18,9 @@
 		A24ACC2E2BFABC7E0062B701 /* HealthTrackerPet_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC2D2BFABC7E0062B701 /* HealthTrackerPet_Watch_AppTests.swift */; };
 		A24ACC382BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC372BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITests.swift */; };
 		A24ACC3A2BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC392BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITestsLaunchTests.swift */; };
+		A2795B9B2BFACB2300192C19 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2795B9A2BFACB2300192C19 /* ActivityView.swift */; };
+		A2795B9F2BFACB6500192C19 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2795B9E2BFACB6500192C19 /* HealthManager.swift */; };
+		A2795BA22BFAD14900192C19 /* AddCaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2795BA12BFAD14900192C19 /* AddCaloriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A216346B2BFAD830000D9433 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A216346D2BFAD850000D9433 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		A21634712BFAD899000D9433 /* ActivitySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySummaryView.swift; sourceTree = "<group>"; };
 		A24ACC112BFABC7D0062B701 /* HealthTrackerPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTrackerPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24ACC172BFABC7D0062B701 /* HealthTrackerPet Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTrackerPet Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24ACC1C2BFABC7D0062B701 /* HealthTrackerPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerPetApp.swift; sourceTree = "<group>"; };
@@ -67,6 +76,10 @@
 		A24ACC332BFABC7E0062B701 /* HealthTrackerPet Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HealthTrackerPet Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24ACC372BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerPet_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		A24ACC392BFABC7E0062B701 /* HealthTrackerPet_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerPet_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2795B9A2BFACB2300192C19 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		A2795B9E2BFACB6500192C19 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		A2795BA02BFACBB000192C19 /* HealthTrackerPet Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthTrackerPet Watch App.entitlements"; sourceTree = "<group>"; };
+		A2795BA12BFAD14900192C19 /* AddCaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCaloriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +131,17 @@
 		A24ACC1B2BFABC7D0062B701 /* HealthTrackerPet Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				A2795BA02BFACBB000192C19 /* HealthTrackerPet Watch App.entitlements */,
 				A24ACC1C2BFABC7D0062B701 /* HealthTrackerPetApp.swift */,
 				A24ACC1E2BFABC7D0062B701 /* ContentView.swift */,
 				A24ACC202BFABC7E0062B701 /* Assets.xcassets */,
 				A24ACC222BFABC7E0062B701 /* Preview Content */,
+				A2795B9A2BFACB2300192C19 /* ActivityView.swift */,
+				A2795B9E2BFACB6500192C19 /* HealthManager.swift */,
+				A2795BA12BFAD14900192C19 /* AddCaloriesView.swift */,
+				A216346B2BFAD830000D9433 /* HomeView.swift */,
+				A216346D2BFAD850000D9433 /* SummaryView.swift */,
+				A21634712BFAD899000D9433 /* ActivitySummaryView.swift */,
 			);
 			path = "HealthTrackerPet Watch App";
 			sourceTree = "<group>";
@@ -309,8 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2795BA22BFAD14900192C19 /* AddCaloriesView.swift in Sources */,
+				A216346E2BFAD850000D9433 /* SummaryView.swift in Sources */,
+				A21634722BFAD899000D9433 /* ActivitySummaryView.swift in Sources */,
 				A24ACC1F2BFABC7D0062B701 /* ContentView.swift in Sources */,
 				A24ACC1D2BFABC7D0062B701 /* HealthTrackerPetApp.swift in Sources */,
+				A216346C2BFAD830000D9433 /* HomeView.swift in Sources */,
+				A2795B9B2BFACB2300192C19 /* ActivityView.swift in Sources */,
+				A2795B9F2BFACB6500192C19 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthTrackerPet Watch App/HealthTrackerPet Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthTrackerPet Watch App/Preview Content\"";
@@ -478,6 +505,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTrackerPet;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Accept to enjoy all features of this app";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthTrackerPet Watch App/HealthTrackerPet Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthTrackerPet Watch App/Preview Content\"";
@@ -508,6 +537,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTrackerPet;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Accept to enjoy all features of this app";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,11 +565,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FTP77G36XW;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTrackerPet;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-gufron.HealthTrackerPet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -551,11 +585,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FTP77G36XW;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTrackerPet;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-gufron.HealthTrackerPet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
