@@ -1,10 +1,4 @@
-//
-//  ActivitySummaryView.swift
-//  HealthTrackerPet Watch App
-//
-//  Created by Anthony on 20/05/24.
-//
-
+// File: ActivitySummaryView.swift
 import SwiftUI
 
 struct ActivitySummaryView: View {
@@ -57,8 +51,12 @@ struct ActivitySummaryView: View {
         switch activityType {
         case .steps:
             return Gradient(colors: [.blue, .purple])
-        case .calories:
+        case .caloriesBurned:
             return Gradient(colors: [.orange, .red])
+        case .caloriesTaken:
+            return Gradient(colors: [.green, .yellow])
+        case .workout:
+            return Gradient(colors: [.purple, .pink])
         }
     }
 }

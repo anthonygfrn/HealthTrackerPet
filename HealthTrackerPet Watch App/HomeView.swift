@@ -7,67 +7,86 @@
 
 import SwiftUI
 
+extension Color {
+    static let customYellow = Color(red: 255 / 255, green: 207 / 255, blue: 122 / 255)
+}
+
 struct HomeView: View {
     
     @EnvironmentObject var manager: HealthManager
+    @State private var showCalorieInput = false
+    @State private var manualCalories = 0.0
+
     var body: some View {
-        ZStack { // Use ZStack for layering elements
-            LinearGradient(gradient: Gradient(colors: [.black, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
+        NavigationStack {
             VStack {
                 HStack {
-                    Image(systemName: "flame")
-                           .font(.headline)
-                           .foregroundColor(.white)
-
-                       Text("\(Int(manager.calories)) / 10000")
-                           .font(.headline)
-                           .foregroundColor(.white)
+                    Text("Goldy")
+                        .foregroundColor(.customYellow)
+                        .font(.system(size: 20))
                     Spacer()
-                    Image(systemName: "figure.walk")
-                           .font(.headline)
-                           .foregroundColor(.white)
-                    
-                    Text("Steps: \(Int(manager.steps)) / 9000")  // Updated label
-                        .font(.headline)
-                        .foregroundColor(.white)
                 }
                 .padding(.horizontal)
 
-                Spacer() // Push image and buttons down
+                CalorieProgressView()
 
-                Image(systemName: "pawprint.fill") // Example system image
-                    .font(.system(size: 70))
-                    .foregroundColor(.white)
-                    .padding(20) // Adjust padding as needed
+                Spacer()
 
                 HStack {
-                    Spacer()
-                    Button(action: {}) { // Placeholder action
+                    NavigationLink(destination: MiniGamePage()) {
                         Image(systemName: "play.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
-
-                    Spacer() // Space between buttons
-
-                    Button(action: {}) { // Placeholder action
-                        Image(systemName: "plus.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
+                            .foregroundColor(.customYellow)
+                            .font(.system(size: 22))
                     }
                     Spacer()
+                    Button(action: {
+                        showCalorieInput = true
+                    }) {
+                        Image(systemName: "fork.knife")
+                            .foregroundColor(.customYellow)
+                            .font(.system(size: 22))
+                    }
+                    .sheet(isPresented: $showCalorieInput) {
+                        VStack {
+                            Text("Enter Calories")
+                                .font(.headline)
+                                .padding()
+
+                            Stepper("Calories: \(Int(manualCalories))", value: $manualCalories, in: 0...10000, step: 50)
+                                .padding()
+                                .background(Color(.gray))
+                                .cornerRadius(10)
+                                .padding(.horizontal)
+
+                            Button("Add") {
+                                manager.updateManualCaloriesTaken(calories: manualCalories)
+                                showCalorieInput = false
+                                manualCalories = 0.0
+                            }
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        }
+                        .padding()
+                    }
                 }
-                
+                .padding(.bottom, 10)
+                .padding(.horizontal)
             }
-        }
-        .onAppear { // Fetch data when view appears
-            manager.fetchHealthData()
-        }
-    }
-}
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            )
+            .onAppear {
+                manager.fetchHealthData()
+                            }
+                        }
+                    }
+                }
 
 #Preview {
     HomeView()
+        .environmentObject(HealthManager())
 }
+

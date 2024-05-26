@@ -10,6 +10,15 @@
 		A216346C2BFAD830000D9433 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216346B2BFAD830000D9433 /* HomeView.swift */; };
 		A216346E2BFAD850000D9433 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216346D2BFAD850000D9433 /* SummaryView.swift */; };
 		A21634722BFAD899000D9433 /* ActivitySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634712BFAD899000D9433 /* ActivitySummaryView.swift */; };
+		A216347A2C01FDC5000D9433 /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634792C01FDC5000D9433 /* TestUI.swift */; };
+		A216347C2C0217EA000D9433 /* MiniGamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216347B2C0217EA000D9433 /* MiniGamePage.swift */; };
+		A216347E2C021804000D9433 /* MiniGameSelectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216347D2C021804000D9433 /* MiniGameSelectionPage.swift */; };
+		A21634802C02181B000D9433 /* MiniGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216347F2C02181B000D9433 /* MiniGameCard.swift */; };
+		A21634842C022372000D9433 /* JumpRopeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634832C022372000D9433 /* JumpRopeGameView.swift */; };
+		A21634862C02BA6C000D9433 /* CalorieProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634852C02BA6C000D9433 /* CalorieProgressView.swift */; };
+		A21634882C02DDDB000D9433 /* CalorieHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634872C02DDDB000D9433 /* CalorieHistoryView.swift */; };
+		A216348A2C02DDEB000D9433 /* CalorieLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21634892C02DDEB000D9433 /* CalorieLogView.swift */; };
+		A216348E2C030E99000D9433 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A216348D2C030E99000D9433 /* ActivityType.swift */; };
 		A24ACC182BFABC7D0062B701 /* HealthTrackerPet Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A24ACC172BFABC7D0062B701 /* HealthTrackerPet Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A24ACC1D2BFABC7D0062B701 /* HealthTrackerPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC1C2BFABC7D0062B701 /* HealthTrackerPetApp.swift */; };
 		A24ACC1F2BFABC7D0062B701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ACC1E2BFABC7D0062B701 /* ContentView.swift */; };
@@ -65,6 +74,15 @@
 		A216346B2BFAD830000D9433 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A216346D2BFAD850000D9433 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		A21634712BFAD899000D9433 /* ActivitySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySummaryView.swift; sourceTree = "<group>"; };
+		A21634792C01FDC5000D9433 /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
+		A216347B2C0217EA000D9433 /* MiniGamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamePage.swift; sourceTree = "<group>"; };
+		A216347D2C021804000D9433 /* MiniGameSelectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameSelectionPage.swift; sourceTree = "<group>"; };
+		A216347F2C02181B000D9433 /* MiniGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameCard.swift; sourceTree = "<group>"; };
+		A21634832C022372000D9433 /* JumpRopeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpRopeGameView.swift; sourceTree = "<group>"; };
+		A21634852C02BA6C000D9433 /* CalorieProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieProgressView.swift; sourceTree = "<group>"; };
+		A21634872C02DDDB000D9433 /* CalorieHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieHistoryView.swift; sourceTree = "<group>"; };
+		A21634892C02DDEB000D9433 /* CalorieLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieLogView.swift; sourceTree = "<group>"; };
+		A216348D2C030E99000D9433 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		A24ACC112BFABC7D0062B701 /* HealthTrackerPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTrackerPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24ACC172BFABC7D0062B701 /* HealthTrackerPet Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTrackerPet Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24ACC1C2BFABC7D0062B701 /* HealthTrackerPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerPetApp.swift; sourceTree = "<group>"; };
@@ -142,6 +160,15 @@
 				A216346B2BFAD830000D9433 /* HomeView.swift */,
 				A216346D2BFAD850000D9433 /* SummaryView.swift */,
 				A21634712BFAD899000D9433 /* ActivitySummaryView.swift */,
+				A21634792C01FDC5000D9433 /* TestUI.swift */,
+				A216347B2C0217EA000D9433 /* MiniGamePage.swift */,
+				A216347D2C021804000D9433 /* MiniGameSelectionPage.swift */,
+				A216347F2C02181B000D9433 /* MiniGameCard.swift */,
+				A21634832C022372000D9433 /* JumpRopeGameView.swift */,
+				A21634852C02BA6C000D9433 /* CalorieProgressView.swift */,
+				A21634872C02DDDB000D9433 /* CalorieHistoryView.swift */,
+				A21634892C02DDEB000D9433 /* CalorieLogView.swift */,
+				A216348D2C030E99000D9433 /* ActivityType.swift */,
 			);
 			path = "HealthTrackerPet Watch App";
 			sourceTree = "<group>";
@@ -329,14 +356,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A216347E2C021804000D9433 /* MiniGameSelectionPage.swift in Sources */,
+				A21634882C02DDDB000D9433 /* CalorieHistoryView.swift in Sources */,
 				A2795BA22BFAD14900192C19 /* AddCaloriesView.swift in Sources */,
+				A21634802C02181B000D9433 /* MiniGameCard.swift in Sources */,
 				A216346E2BFAD850000D9433 /* SummaryView.swift in Sources */,
 				A21634722BFAD899000D9433 /* ActivitySummaryView.swift in Sources */,
 				A24ACC1F2BFABC7D0062B701 /* ContentView.swift in Sources */,
 				A24ACC1D2BFABC7D0062B701 /* HealthTrackerPetApp.swift in Sources */,
 				A216346C2BFAD830000D9433 /* HomeView.swift in Sources */,
 				A2795B9B2BFACB2300192C19 /* ActivityView.swift in Sources */,
+				A216347A2C01FDC5000D9433 /* TestUI.swift in Sources */,
+				A216348E2C030E99000D9433 /* ActivityType.swift in Sources */,
+				A216348A2C02DDEB000D9433 /* CalorieLogView.swift in Sources */,
+				A21634842C022372000D9433 /* JumpRopeGameView.swift in Sources */,
 				A2795B9F2BFACB6500192C19 /* HealthManager.swift in Sources */,
+				A216347C2C0217EA000D9433 /* MiniGamePage.swift in Sources */,
+				A21634862C02BA6C000D9433 /* CalorieProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

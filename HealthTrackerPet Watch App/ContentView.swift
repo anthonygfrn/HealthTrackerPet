@@ -1,10 +1,4 @@
-//
-//  ContentView.swift
-//  HealthTrackerPet Watch App
-//
-//  Created by Anthony on 20/05/24.
-//
-
+// File: ContentView.swift
 import SwiftUI
 
 struct ContentView: View {
@@ -30,8 +24,8 @@ struct ContentView: View {
                 .cornerRadius(15)
 
                 ActivityView(
-                    activityType: .calories,
-                    title: "Today Calories",
+                    activityType: .caloriesBurned,
+                    title: "Today Calories Burned",
                     goal: 900,
                     icon: "flame",
                     value: manager.calories
@@ -44,13 +38,45 @@ struct ContentView: View {
                     )
                 )
                 .cornerRadius(15)
-            }
-            .padding() 
-        }
 
+                ActivityView(
+                    activityType: .caloriesTaken,
+                    title: "Today Calories Taken",
+                    goal: 2000,
+                    icon: "fork.knife",
+                    value: manager.totalCaloriesTaken
+                )
+                .background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.green, .yellow]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .cornerRadius(15)
+
+                ActivityView(
+                    activityType: .workout,
+                    title: "Today Workout Minutes",
+                    goal: 30,
+                    icon: "figure.run",
+                    value: manager.workoutMinutes
+                )
+                .background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.purple, .pink]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .cornerRadius(15)
+            }
+            .padding()
+        }
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(HealthManager())
 }

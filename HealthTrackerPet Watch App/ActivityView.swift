@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-enum ActivityType {
-    case steps, calories
-}
-
 struct ActivityView: View {
     let activityType: ActivityType
     let title: String
